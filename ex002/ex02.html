@@ -9,17 +9,19 @@
     
     <script>
 
-        var nota1 = 7.5;
-        var nota2 = 6.0;
-        var nota3 = 8.0;
-        var nota4 = 7.5;
+        var nota1 = 4.5;
+        var nota2 = 4.0;
+        var nota3 = 5.0;
+        var nota4 = 4.5;
 
         var media = (nota1+nota2+nota3+nota4) / 4;
 
         if(media >=7) {
             situacao = "Aprovado";
+        } else if (media < 5){
+            situacao = "Reprovado"
         } else{
-            situacao = "Reprovado";
+            situacao = "Recuperação";
         }
 
         console.log('Sua média é:', media)
